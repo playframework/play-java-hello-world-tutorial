@@ -1,4 +1,4 @@
-# Create a Play "Hello World" application using Scala
+# Create a Play "Hello World" application using Java
 
 This tutorial shows you how to create a Play project from a [giter8](http://www.foundweekends.org/giter8/) template. It describes how to make simple changes to the project to give you a feel for working with Play. In a just a few minutes, you will learn about:
 
