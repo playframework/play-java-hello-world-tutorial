@@ -1,4 +1,4 @@
-# Create a Play "Hello World" application using Java
+# Create a Play "Hello World" application using Scala
 
 This tutorial shows you how to create a Play project from a [giter8](http://www.foundweekends.org/giter8/) template. It describes how to make simple changes to the project to give you a feel for working with Play. In a just a few minutes, you will learn about:
 
@@ -6,20 +6,11 @@ This tutorial shows you how to create a Play project from a [giter8](http://www.
 * Play's hot reload capability
 * How to use an HTTP request parameter to pass a value
 
-> Marcos: add links to official docs. Ruth: I had planned to put this tutorial in the Getting Started section of the official docs, where a general link to the docs would not be needed. Do you think it should be a stand-alone guide?
-
 In contrast with web frameworks that were designed to support large eco-systems, such as Java EE, Play was developed by web developers&mdash;for web development. Play saves precious development time by directly supporting common tasks and hot reloading so that you can immediately view the results of your work. As a full-stack framework, it includes all of the components you need to build a web application such as an integrated HTTP server, form validation, Cross-Site Request Forgery (CSRF) protection, RESTful web services API, and more.
 
-> Marcos: I think it is super important to talk about hot code reload and how that helps you to be more productive. Maybe showing play hot reloading the application after making a change (this could be done below)? Ruth: I did show it in the procedures, but I will make it more direct.
-
-Play offers both Scala and Java APIs, with Java being a first class citizen. As a Java developer, you will find Play's Model-View-Controller (MVC) architecture familiar and easy to learn. The large Java community using Play offers an excellent resource for getting questions answered.
+Play offers both Java and Scala APIs. As a Java developer, you will find Play's Model-View-Controller (MVC) architecture familiar and easy to learn. The large Java community using Play offers an excellent resource for getting questions answered.
 
 The Play Framework uses Scala and Akka under the hood. This endows Play applications with a stateless, non-blocking, event-driven architecture that provides horizontal and vertical scalability and uses resources more efficiently.  
-
-> Marcos: "Play provides a type-safe mapping from HTML to its Java API". Unclear to me what you mean by "mapping". Are you talking about templates being type safe? Ruth: This was a benefit that some bloggers and the Play book seemed to stress. I didn't want to quote directly, so I reworded slightly, probably off the mark. I've removed it from this version.
-
-
-> Marcos: "The Play Framework is implemented in Scala and uses Akka under the hood". Most of Play is implemented using Scala, but it offers Java APIs that are on par with the Scala's one. So maybe we can rewrite this sentence to make that clear and not scare Java developers. Ruth: I reorganized a bit and rewrote, is it better now? 
 
 ## Prerequisites
 
@@ -49,7 +40,7 @@ If you do not have the required versions, follow these links to obtain them:
 
 A Play project created from a seed template includes all Play components and an HTTP server. Play uses Akka HTTP by default, but you can configure it to use [Netty](https://netty.io/). The project is also configured with filters for Cross-Site Request Forgery (CSRF) protection and security headers.
 
-Use the template and `sbt` to create and run a project:
+Use the template to create and run a project:
 
 1. In a command window, enter: `sbt new playframework/play-java-seed.g8`
 
@@ -75,18 +66,19 @@ Use the template and `sbt` to create and run a project:
 
 If you browse the project, you will find application components under the `app` subdirectory. Within that subdirectory, you will find a familiar organization of controllers and views. Since this simple project does not use data, it does not contain a `model` directory, but this is where you would add it. You'll find the location for images, javascript, and stylesheets in the `public` subdirectory. For more details, see [The Play application layout](https://www.playframework.com/documentation/2.6.x/Anatomy#The-Play-application-layout)
 
-> Marcos: link to play anatomy documentation. Ruth: is this the page you meant, and is there a variable to put in the URL so that this always points at the latest version?
+> Change to a local cross-reference to the doc when this tutorial is included in the doc. [[the Play application layout|Anatomy]]
 
 To construct the simple welcome message, the project uses:
 
 * A controller that defines an `index` action method.
 * A `routes` file that maps a request to the `localhost` root to the `index` action.
-* A Twirl template to generate HTML page contents. The [Twirl](https://www.playframework.com/documentation/2.6.x/ScalaTemplates) template language is:
+* A Twirl template to generate HTML page contents. The [Twirl](https://www.playframework.com/documentation/2.6.x/JavaTemplates) template language is:
     * Easy to learn
     * Requires no special editor
     * Provides type safety
     * Is compiled so that errors display in the browser
 
+>Change link above to local doc link
 
 Note: in the remaining content, for Windows shells, substitute `/` for `\` in path names.
 
@@ -148,8 +140,6 @@ Let's add a second page to this project. If this were a real application, we wou
 1. Refresh your browser and the index page should contain a link to the new `About` page.
 1. Click the link to open the new page.
 
-> Marcos: since you are just adding a single page, I would do that using `HomeController` instead of creating another one. That would simplify the example. Ruth: good idea, done.
-
 ## Use an HTTP request parameter
 
 As the final part of this tutorial, modify the `About` page to accept an HTTP request parameter. First, create an action that accepts a name from the request and outputs it. We will introduce an error to demonstrate how Play provides useful feedback.  Then, bind an HTTP query parameter to the action parameter. Finally, create a page template so that you can style the results:
@@ -161,8 +151,6 @@ As the final part of this tutorial, modify the `About` page to accept an HTTP re
         return ok("Hello  + name);
     }
     ```
-
-> Ruth: I deliberately left the second quote around Hello out, to create an error. Did you mean to put it back in? 
 
 1. In the `routes` file, create a new line that maps a `hello` request to the `hello` action and declares the `name` parameter:
 
