@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\play-tutorial-example-java\play-java-hello-world-web\app\views\tutorial.scala.html:9:300: not found: value version[0m
+[0m[[0m[31merror[0m] [0m[0m    <p>This tutorial provides the instructions for using <a href="http://www.scala-sbt.org/" target="_blank"><code>sbt</code></a> (simple build tool) from a command window to build the application, but you can also integrate Play projects with your <a href="https://playframework.com/documentation/@version/IDE" target="_blank">favorite IDE</a>.</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                                                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
