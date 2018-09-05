@@ -1,3 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m[Error] C:\play-tutorial-example-java\play-java-hello-world-web\app\views\tutorial.scala.html:75[0m
-[0m[[0m[31merror[0m] [0m[0m1. On that line, add an @ directive that declares the name parameter and its type: `@(name: String)`: Expected '}' but found '@'[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mtwirlCompileTemplates[0m) Twirl compilation failed[0m
