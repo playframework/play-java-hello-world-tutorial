@@ -11,7 +11,7 @@
   <p>This tutorial introduces Play Framework, describes how Play web applications work, and walks you through steps to create page that displays a Hello World greeting.</p> 
   <p>If you loaded this page from the web server running on <code>localhost:9000</code>, congratulations! You have successfully built and run a Play application. If not, you likely opened the source <code>index.scala.html</code> file. Please follow the directions in the <code>README.md</code> file in the top-level project directory to run the tutorial.</li>
 
-  <h2 id="introduction">Introduction to Play</h2>
+  <h3 id="introduction">Introduction to Play</h3>
   <p>As illustrated below, Play is a full-stack framework with all of the components you need to build a Web Application or a REST service, including:</p> 
   <ul>
     <li>An integrated HTTP server</li>
@@ -21,9 +21,9 @@
     <li>I18n support, and more.</li>
   </ul>    
 
-   <img src="assets/images/play-stack.png" alt="Play Stack" />
+   <img src="assets/images/play-stack.png" alt="Play Stack" "small-5 medium-4 large-3" />
    
-   <p>Play integrates with many object relational mapping (ORM) layers. It has out-of-the-box support for Anorm, JavaEbean, PlaySlick, and JPA. See <a href="https://www.playframework.com/documentation/latest/JavaDatabase" target="_blank">Accessing an SQL Database</a> for more information. Many customers use NoSQL, other ORMs or even access data from a REST service.</p>
+   <p>Play integrates with many object relational mapping (ORM) layers. It has out-of-the-box support for <a href="https://www.playframework.com/documentation/latest/Anorm" target="_blank">Anorm</a>, <a href="https://www.playframework.com/documentation/latest/JavaEbean" target="_blank">JavaEbean</a>, <a href="https://www.playframework.com/documentation/latest/PlaySlick" target="_blank">PlaySlick</a>, and <a href="https://www.playframework.com/documentation/latest/JavaJPA" target="_blank">JPA</a>. See <a href="https://www.playframework.com/documentation/latest/JavaDatabase" target="_blank">Accessing an SQL Database</a> for more information. Many customers use NoSQL, other ORMs or even access data from a REST service.</p>
 
    
    <p>Play APIs are available in both Java and Scala. The Framework uses <a href="https://akka.io" target="_blank" >Akka</a> and <a href="https://doc.akka.io/docs/akka-http/current/index.html" target="_blank">Akka HTTP</a> under the hood. This endows Play applications with a stateless, non-blocking, event-driven architecture that provides horizontal and vertical scalability and uses resources more efficiently. Play projects contain Scala components, but because Play has a Java API, Java developers do not need to learn Scala to use Play successfully.</p>

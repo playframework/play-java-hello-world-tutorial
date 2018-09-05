@@ -3,7 +3,7 @@
 To follow the steps in this tutorial, you will need the correct version of Java and a build tool. You can build Play projects with sbt or Gradle. Since sbt works particularly well with Play, we recommend trying this example with sbt. The template requires:
 
 * Java Software Developer's Kit (SE) 1.8 or higher
-* sbt 0.13.13 or higher
+* sbt 0.13.15 or higher (we recommend 1.2.1)
 
 To check your Java version, enter the following in a command window:
 
@@ -20,7 +20,7 @@ If you do not have the required versions, follow these links to obtain them:
 
 ## Build and run the project
 
-This example Play project was created from a seed template. It includes all Play components and an HTTP server. Play uses Akka HTTP by default, but you can configure it to use Netty. The project is also configured with filters for Cross-Site Request Forgery (CSRF) protection and security headers.
+This example Play project was created from a seed template. It includes all Play components and an Akka HTTP server. The project is also configured with filters for Cross-Site Request Forgery (CSRF) protection and security headers.
 
 To build and run the project:
 
