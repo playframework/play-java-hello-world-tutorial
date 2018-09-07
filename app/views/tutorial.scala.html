@@ -64,7 +64,7 @@
  <ol>
    <li>If you stopped the application for some reason, restart it with the <code>sbt run</code> command.</li>
    <li>Enter the URL <a href="http://localhost:9000/hello">http://localhost:9000/hello</a> to view the results of your work. The browser should respond with something like the following:
- <p><img src="assets/images/hello-one.png" alt="Add Request and response screen" class="small-5 medium-4 large-3"/></p></li>
+ <p><img src="assets/images/hello-one.png" alt="Add Request and response screen" "small-5 medium-4 large-3"/></p></li>
 </ol>
 
 <h3 id="customize">Customize the greeting</h3>
@@ -90,14 +90,14 @@
    <li>Open a new browser tab</li> 
    <li>Enter the following URL and pass in any name as a query parameter to the hello method: <a target="play-docs" href="http://localhost:9000/hello?name=MyName">http://localhost:9000/hello?name=MyName</a>. 
      <p>Play responds with a helpful compilation error that tells you the file and line number causing the problem. The message shows that the render method in the return value requires a typed parameter: </p>
-     <p><img src="assets/images/compilation-error.png" alt="Error message" class="small-5 medium-4 large-3"/></p></li>
+     <p><img src="assets/images/compilation-error.png" alt="Error message" "small-5 medium-4 large-3"/></p></li>
 </ol>
 <p>To fix the compilation error, modify the <code>hello</code> action method in <code>HomeController</code> so that the it includes the <code>name</code> parameter when rendering the view:
 <pre><code>public Result hello(String name) {
           return ok(javaguide.hello.html.helloName.render(name));
   }</code></pre></p>
 <p> Save the file and refresh the browser. Play detects the change, automatically recompiles, and reloads the page. The page should display a customized greeting similar to the following:</p>
-<p><img src="assets/images/hello-custom.png" alt="Hello Malitha" class="small-5 medium-4 large-3"/></p>
+<p><img src="assets/images/hello-custom.png" alt="Hello Malitha" "small-5 medium-4 large-3"/></p>
  
  <h3>Summary</h3>
  <p>Thanks for trying our tutorial. You learned how to use an action method, routes, Twirl template, and input parameter to create a customized Hello World greeting! You experienced how template compilation makes it easier to identify and fix problems and how auto-reloading saves time.
