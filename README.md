@@ -3,7 +3,7 @@
 To follow the steps in this tutorial, you will need the correct version of Java and a build tool. You can build Play projects with sbt or Gradle. Since sbt works particularly well with Play, we recommend trying this example with sbt. The template requires:
 
 * Java Software Developer's Kit (SE) 1.8 or higher
-* sbt 0.13.15 or higher (we recommend 1.2.1)
+* sbt 0.13.15 or higher (we recommend 1.2.3)
 
 To check your Java version, enter the following in a command window:
 
