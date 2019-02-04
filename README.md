@@ -32,4 +32,4 @@ To build and run the project:
 
 3. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:9000>
 
-The Play application responds: `Welcome to the Hello World Tutorial!`
+The Play application responds: `Welcome to the Hello World Tutorial!`  
